@@ -66,9 +66,9 @@ function loop() {
 		specimen.style.letterSpacing = `${newLetterSpacing}px`;
 	}
   if (ids.includes(1)) {
-	  const detection = detections.find((det) => det.id === 1);
-	  const x = detection.center.x;
-    console.log(x);
+	  	const detection = detections.find((det) => det.id === 1);
+	  	const x = detection.center.x;
+    	//console.log(x);
 		let newWeight = rangeMap(x, 400, 800, 80, 200);
 		specimen.style.fontVariationSettings = `'wght' ${newWeight}`;
   }
