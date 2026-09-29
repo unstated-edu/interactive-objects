@@ -1,0 +1,13 @@
+#text {
+  font-family: "HGKUnica77VIPBeta", monospace;
+  width: 100%;
+  font-size: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-variation-settings: "wght" 32, "slnt" 0, "wdth" 80;
+  padding: 0 50px;
+  outline: none;
+  border: none;
+}

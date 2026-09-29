@@ -1,0 +1,155 @@
+html,
+body {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+.container-main {
+  grid-area: main;
+}
+
+.container-main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+iframe {
+  width: 100%;
+}
+
+.container-menu {
+  grid-area: menu;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  /* height: 1px; */
+  background: #000;
+  padding: 0;
+  height: 0;
+  margin: 0;
+  /* margin: 8px 0px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 13px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  line-height: 100%;
+}
+
+ul > li {
+  margin-top: 5px;
+}
+ol {
+  counter-reset: item;
+  margin: 0;
+}
+
+li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+.no-padding {
+  padding: 0;
+  margin: 0;
+}
+
+.container-main-header {
+  display: flex;
+}
+
+.color-0, .color-0 a {
+  color: gray;
+}
+
+.color-0 a:hover {
+  color: black;
+}
+
+.color-1,
+.color-1 a {
+  color: #0000ff;
+}
+.color-1 a:hover {
+  color: black;
+}
+
+.color-2,
+.color-2 a {
+  color: #f5411d;
+}
+
+.color-2 a:hover {
+  color: black;
+}
+
+
+.color-3,
+.color-3 a {
+  color: #8221FF;
+}
+
+.color-3 a:hover {
+  color: black;
+}
+
+
+.color-4,
+.color-4 a {
+  color: #01D601;
+}
+
+.color-4 a:hover {
+  color: black;
+}
+
+.color-5,
+.color-5 a {
+  color: #FF8B00;
+}
+
+.color-5 a:hover {
+    color: black;
+  }
+
+  .color-none {
+    opacity: 0.3;
+  }
+
+.color-7,
+.color-7 a {
+  color:rgb(208, 0, 255);
+}
+
+.color-7 a:hover {
+  color: black;
+}

@@ -1,0 +1,13 @@
+#text-audio {
+  font-family: "HGKUnica77VIPBeta", monospace;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-variation-settings: 'wght' 228;
+  padding: 0 50px;
+  outline: none;
+  border: none;
+  font-size: 20vw;
+}

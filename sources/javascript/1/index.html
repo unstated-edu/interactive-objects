@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript - Handtracking</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../default.css" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p class="main-description">
+      Move your face right, left, and closer to the screen.<br />
+      <span class="highlights">handtracking</span>
+    </p>
+    <section id="container">
+      <div id="rect"></div>
+      <video
+        class="videobox canvasbox"
+        autoplay="autoplay"
+        id="myvideo"
+      ></video>
+      <canvas id="canvas" class="border canvasbox"></canvas>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+  <script src="src/handTrackingInit.js"></script>
+  <script src="script.js"></script>
+</html>

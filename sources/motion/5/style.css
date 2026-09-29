@@ -1,0 +1,51 @@
+html,
+body {
+  font-family: "Helvetica", sans-serif;
+
+  color: var(--color-primary);
+}
+
+.main-description {
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center;
+  transition: all 0.5s;
+}
+
+.container2 {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center;
+  transition: all 0.5s;
+}
+
+
+img {
+  width: 100px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.rotateAndScale {
+  transform: translate(-50%, -50%) scale(2.4) rotate(360deg);
+}
+

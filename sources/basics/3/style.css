@@ -1,0 +1,78 @@
+
+/** flex-container **/
+.container {
+  gap: 10px;
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin-bottom: 50px;
+  min-height: 400px;
+  position: relative;
+}
+
+/** positioning **/
+.box-fixed {
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-primary);
+  z-index: 100;
+}
+
+.box-absolute {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-primary);
+}
+
+.box-absolute-2 {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-primary);
+}
+
+.box-relative {
+  position: relative;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.box-sticky {
+  position: sticky;
+  top: 30px;
+  left: 45%;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-primary);
+
+}
+
+/** padding **/
+html {
+  padding-bottom: 50px;
+}

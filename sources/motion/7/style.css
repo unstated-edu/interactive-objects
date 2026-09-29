@@ -1,0 +1,101 @@
+html,
+body {
+  font-family: "Helvetica", sans-serif;
+
+  color: var(--color-primary);
+}
+
+.main-description {
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.row {
+  position: fixed;
+  top: 45%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.col {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-primary);
+}
+
+.col1 {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.col2 {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.col3 {
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.col4:hover {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+    background: black;
+  }
+
+
+  100% {
+    
+    transform: translateY(200px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

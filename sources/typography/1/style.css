@@ -1,0 +1,12 @@
+/** flex-container **/
+.container {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, p, em, strong {
+  color: var(--color-primary);
+  margin: 0
+}

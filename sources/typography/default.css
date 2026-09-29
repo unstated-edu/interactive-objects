@@ -1,0 +1,52 @@
+/** Variables **/
+:root {
+  --color-primary: #8221ff;
+  --color-secondary: #faf6ff;
+  --border-radius: 5px;
+}
+
+
+/** General UI **/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+p.description {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: black;
+  line-height: 1.5;
+}
+
+p.main-description {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: black;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.highlights {
+  background-color: var(--color-secondary);
+  padding: 3px 6px;
+  color: var(--color-primary);
+  border-radius: var(--border-radius);
+  margin-top: 5px;
+  display: inline-block;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Basics - Positioning</title>
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p>
+      Fixed positioning
+      <span class="highlights">position: fixed</span><br />
+      A fixed position element is positioned relative to the viewport, or the browser window itself, rather than the document.<br/> This means it will stay in the same place even if the page is scrolled.
+    </p>
+    <div class="container">
+      <div class="box-fixed">1</div>
+    </div>
+    <p>
+      Absolute positioning
+      <span class="highlights">position: absolute</span><br />
+      Absolute positioning places an element relative to its nearest positioned div. 
+    </p>
+    <div class="container">
+      <div class="box-absolute">1</div>
+      <div class="box-absolute-2">2</div>
+    </div>
+    <p>
+      Sticky positioning
+      <span class="highlights">position: sticky</span><br />
+      Sticky positioning is a mix between relative and fixed positioning. An element is treated as relatively positioned until it crosses a specified threshold within the viewport (like scrolling to a certain point), at which point it becomes fixed.
+    </p>
+    <div class="container">
+      <div class="box-sticky">1</div>
+    </div>  
+    <p>
+      Relative positioning
+      <span class="highlights">position: relative</span><br />
+      When you set an element’s position to relative, it allows you to position the element relative to its normal position in the document flow.
+    </p>
+    <div class="container">
+      <div class="box-relative">1</div>
+      <div class="box-relative">2</div>
+    </div>     
+  </body>
+</html>

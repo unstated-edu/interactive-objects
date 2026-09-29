@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IO Detect Color</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="stage">
+      <video id="video" autoplay playsinline width="640" height="480"></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+      <p id="pick-hint" class="pick-hint" hidden>Click on the video to sample the active color</p>
+    </div>
+
+    <aside id="color-tool" class="color-tool">
+      <h2 class="color-tool__title">Color calibration</h2>
+      <p class="color-tool__hint">Pick a swatch or sample from the webcam. Tune tolerance if detection is too strict or too noisy.</p>
+
+      <label class="color-tool__field">
+        <span>Hue tolerance</span>
+        <input type="range" id="hue-tol" min="2" max="25" value="10" />
+        <output id="hue-tol-val">10</output>
+      </label>
+      <label class="color-tool__field">
+        <span>Min saturation</span>
+        <input type="range" id="sat-min" min="0" max="255" value="80" />
+        <output id="sat-min-val">80</output>
+      </label>
+      <label class="color-tool__field">
+        <span>Min brightness</span>
+        <input type="range" id="val-min" min="0" max="255" value="80" />
+        <output id="val-min-val">80</output>
+      </label>
+
+      <div id="color-slots" class="color-slots"></div>
+    </aside>
+  </div>
+
+  <div id="status">Loading OpenCV...</div>
+  <script async src="https://docs.opencv.org/4.x/opencv.js" onload="onOpenCvReady();"></script>
+  <script src="main.js"></script>
+</body>
+</html>

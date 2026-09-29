@@ -1,0 +1,147 @@
+/* 
+***************
+Grid
+***************
+*/
+
+:root {
+  --columns: 12;
+  --gap: 10px; // You can adjust the gap size here
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.col {
+  flex: 0 0 auto; // Allows flex-basis to be auto-calculated
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Correctly calculated column widths considering the gap */
+.col-1 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 1 -
+        (var(--gap) * (var(--columns) - 1) / var(--columns))
+    );
+}
+.col-2 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 2 -
+        (var(--gap) * (var(--columns) - 2) / var(--columns))
+    );
+}
+.col-3 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 3 -
+        (var(--gap) * (var(--columns) - 3) / var(--columns))
+    );
+}
+.col-4 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 4 -
+        (var(--gap) * (var(--columns) - 4) / var(--columns))
+    );
+}
+.col-5 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 5 -
+        (var(--gap) * (var(--columns) - 5) / var(--columns))
+    );
+}
+.col-6 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 6 -
+        (var(--gap) * (var(--columns) - 6) / var(--columns))
+    );
+}
+.col-7 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 7 -
+        (var(--gap) * (var(--columns) - 7) / var(--columns))
+    );
+}
+.col-8 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 8 -
+        (var(--gap) * (var(--columns) - 8) / var(--columns))
+    );
+}
+.col-9 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 9 -
+        (var(--gap) * (var(--columns) - 9) / var(--columns))
+    );
+}
+.col-10 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 10 -
+        (var(--gap) * (var(--columns) - 10) / var(--columns))
+    );
+}
+.col-11 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 11 -
+        (var(--gap) * (var(--columns) - 11) / var(--columns))
+    );
+}
+.col-12 {
+  flex: 0 0
+    calc(
+      100% / var(--columns) * 12 -
+        (var(--gap) * (var(--columns) - 12) / var(--columns))
+    );
+}
+
+@media (max-width: 768px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    flex: 0 0 calc(100%);
+  }
+}
+
+/* 
+  ***************
+  End Grid
+  ***************
+  */

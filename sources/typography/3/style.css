@@ -1,0 +1,50 @@
+/** import fonts **/
+@font-face {
+  font-family: 'HGKBrownLLVIP-Collection';
+  src: url('fonts/HGKBBrownLLVIP-Collection.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/** flex-container **/
+.container {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, em, strong {
+  color: var(--color-primary);
+}
+
+.font-regular {
+  font-family: 'HGKBrownLLVIP-Collection';
+}
+
+.font-bold {
+  font-family: 'HGKBrownLLVIP-Collection';
+  font-variation-settings: 'wght' 850, 'slnt' -10, 'wdth' 75;
+}
+
+.font-italic {
+  font-family: 'HGKBrownLLVIP-Collection';
+  font-variation-settings: 'slnt' -10;
+}
+
+.font-back-italic {
+  font-family: 'HGKBrownLLVIP-Collection';
+  font-variation-settings: 'slnt' 10;
+}
+
+.font-medium {
+  font-size: 21px;
+  line-height: 120%;
+}
+.columns-2 {
+  columns: 2;
+  column-gap: 20px;
+}

@@ -1,0 +1,67 @@
+/** flex-container **/
+.container {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, p, em, strong {
+  color: var(--color-primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.spacing-5 {
+  letter-spacing: 10px;
+}
+
+.word-spacing-10 {
+  word-spacing: 20px;
+}
+
+.transform-uppercase {
+  text-transform: uppercase;
+}
+
+.transform-capitalize {
+  text-transform: capitalize;
+}
+
+.line-height-200 {
+  line-height: 200%;
+}
+
+.font-large {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.font-small {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.font-helvetica {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.columns-2 {
+  columns: 2;
+  column-gap: 20px;
+}
+
+.columns-3 {
+  columns: 3;
+  column-gap: 10px;
+}
+
+.font-bold {
+  font-weight: bold;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flex - Dimensions</title>
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 1 -->
+    <p>
+      Basic structure of a flex grid.
+      <span class="highlights">flex-grow: 1</span>+<span class="highlights">width px</span><br />
+      The CSS property flex-grow: 1; is used within a flexbox context to control how much an element should grow relative to other elements in the same flex container.
+    </p>
+    <div class="flex-container container-start">
+      <div class="flex-item-grow">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <!-- 2 -->
+    <p>
+      Basic structure of a flex grid.
+      <span class="highlights">width: px</span> +
+      <span class="highlights">flex-grow: 1</span> +
+      <span class="highlights">width: %</span><br />
+      The CSS property flex-grow: 1; is used within a flexbox context to control how much an element should grow relative to other elements in the same flex container.
+    </p>
+
+    <div class="flex-container container-start">
+      <div class="flex-item-2">3</div>
+      <div class="flex-item-grow">2</div>
+      <div class="flex-item-3">3</div>
+    </div>
+
+    <!-- 3 -->
+    <p>
+      Basic structure of a flex grid.
+      <span class="highlights">width: %</span><br />
+      The percentage value is perfect for having elements that behave responsively.
+    </p>
+
+    <div class="flex-container container-start">
+      <div class="flex-item-2">2</div>
+      <div class="flex-item-2">1</div>
+      <div class="flex-item-2">3</div>
+    </div>
+
+    <!-- 4 -->
+    <p>
+      Basic structure of a flex grid.
+      <span class="highlights">flex-grow: 1</span><br/>
+      The elements adjust depending on the number of divs, filling the space
+    </p>
+
+    <div class="flex-container container-start">
+      <div class="flex-item-grow">1</div>
+      <div class="flex-item-grow">2</div>
+      <div class="flex-item-grow">3</div>
+      <div class="flex-item-grow">3</div>
+      <div class="flex-item-grow">3</div>
+      <div class="flex-item-grow">3</div>
+      <div class="flex-item-grow">3</div>
+    </div>
+  </body>
+</html>

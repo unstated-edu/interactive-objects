@@ -1,0 +1,36 @@
+/** Variables **/
+:root {
+  --color-primary: #f5411d;
+  --color-secondary: #fff5f3;
+  --border-radius: 5px;
+}
+
+/** General UI **/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  height: 100%;
+}
+
+p {
+  font-size: 13px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.highlights {
+  background-color: var(--color-secondary);
+  padding: 3px 6px;
+  color: var(--color-primary);
+  border-radius: var(--border-radius);
+  margin-top: 5px;
+  display: inline-block;
+}

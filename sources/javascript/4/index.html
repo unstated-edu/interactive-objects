@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javascript - Variable font</title>
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./grid.css" />
+  </head>
+  <body>
+    <p class="main-description">
+      Interact with the variable font.<br />
+      <span class="highlights"
+        >font-variation-settings: 'wght' 32, 'slnt' 0, 'wdth' 80;</span
+      >
+    </p>
+    <div class="row">
+      <div class="col col-12">
+        <div contenteditable="true" id="text" class="col-full-height">
+          Unica 77 Lineto
+        </div>
+      </div>
+    </div>
+    <div class="row col-full-slider">
+      <div class="col col-4 col-center">
+        <p>Weight (wght) (<span id="fontWeightValue">0</span>)</p>
+        <input
+          type="range"
+          id="fontWeight"
+          min="32"
+          max="228"
+          step="1"
+          value="32"
+        />
+      </div>
+      <div class="col col-4 col-center">
+        <p>Slant (slnt) (<span id="fontSlantValue">0</span>)</p>
+        <input
+          type="range"
+          id="fontSlant"
+          min="0"
+          max="24"
+          step="1"
+          value="0"
+        />
+      </div>
+
+      <div class="col col-4 col-center">
+        <p>Width (wdth) (<span id="fontWidthValue">0</span>)</p>
+        <input
+          type="range"
+          id="fontWidth"
+          min="80"
+          max="100"
+          step="1"
+          value="80"
+        />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

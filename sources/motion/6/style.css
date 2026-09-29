@@ -1,0 +1,48 @@
+html,
+body {
+  font-family: "Helvetica", sans-serif;
+
+  color: var(--color-primary);
+}
+
+.main-description {
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.container {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes example {
+  0% {
+    transform: translateX(-200px) rotate(0deg);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(200px, 0px)  rotate(360deg);
+  }
+}

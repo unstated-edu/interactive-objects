@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Slider + Charset + Grid</title>
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./char.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-6">6</div>
+      <div class="col col-2">2</div>
+      <div class="col col-12">12</div>
+      <div class="col col-4">4</div>
+      <div class="col col-4">4</div>
+      <div class="col col-4">4</div>
+    </div>
+    <div class="row">
+      <div class="col col-8">8</div>
+      <div class="col col-1">1</div>
+    </div>
+
+    <!-- charset -->
+
+    <div class="row" id="charset">
+      <div class="col col-4" id="preview">
+        <div id="preview-info"></div>
+        <div id="preview-info-2"></div>
+        <div id="preview-char">
+          <div id="preview-char-span"></div>
+          <div id="preview-line-bottom"></div>
+        </div>
+      </div>
+      <div class="col col-8">
+        <div class="row">
+          <div class="col col-12">0000-007F Basic Latin</div>
+        </div>
+        <div class="row">
+          <div
+            class="col col-1 char"
+            data-info="0021: EXCLAMATION MARK"
+            data-info2="0000-007F Basic Latin"
+          >
+            A
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0021: EXCLAMATION MARK"
+            data-info2="0000-007F Basic Latin"
+          >
+            !
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0022: QUOTATION MARK"
+            data-info2="0000-007F Basic Latin"
+          >
+            "
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0023: NUMBER SIGN"
+            data-info2="0000-007F Basic Latin"
+          >
+            #
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0024: DOLLAR SIGN"
+            data-info2="0000-007F Basic Latin"
+          >
+            $
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0024: DOLLAR SIGN"
+            data-info2="0000-007F Basic Latin"
+          >
+            $
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0025: PERCENT SIGN"
+            data-info2="0100-017F Latin Extended-A"
+          >
+            %
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0025: PERCENT SIGN"
+            data-info2="0100-017F Latin Extended-A"
+          >
+            %
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="0025: PERCENT SIGN"
+            data-info2="0100-017F Latin Extended-A"
+          >
+            %
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12">0080-00FF Latin-1 Supplement</div>
+        </div>
+        <div class="row">
+          <div
+            class="col col-1 char"
+            data-info="0080-00FF Latin-1 Supplement"
+            data-info2="0080-00FF Latin-1 Supplement"
+          ></div>
+          <div
+            class="col col-1 char"
+            data-info="00A1: INVERTED EXCLAMATION MARK"
+            data-info2="0080-00FF Latin-1 Supplement"
+          >
+            ¡
+          </div>
+          <div
+            class="col col-1 char"
+            data-info="00A2: CENT SIGN"
+            data-info2="0080-00FF Latin-1 Supplement"
+          >
+            ¢
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endcharset -->
+
+    <!-- slider -->
+    <div class="row" id="slider">
+      <div class="col col-12">
+        <div contenteditable="true" id="text" class="col-full-height">
+          Unica 77 Lineto
+        </div>
+      </div>
+    </div>
+    <div class="row col-full-slider">
+      <div class="col col-4 col-center">
+        <p>Weight (wght) (<span id="fontWeightValue">0</span>)</p>
+        <input
+          type="range"
+          id="fontWeight"
+          min="32"
+          max="228"
+          step="1"
+          value="32"
+        />
+      </div>
+      <div class="col col-4 col-center">
+        <p>Slant (slnt) (<span id="fontSlantValue">0</span>)</p>
+        <input
+          type="range"
+          id="fontSlant"
+          min="0"
+          max="24"
+          step="1"
+          value="0"
+        />
+      </div>
+
+      <div class="col col-4 col-center">
+        <p>Width (wdth) (<span id="fontWidthValue">0</span>)</p>
+        <input
+          type="range"
+          id="fontWidth"
+          min="80"
+          max="100"
+          step="1"
+          value="80"
+        />
+      </div>
+    </div>
+    <!-- end slider -->
+
+    <script src="./char.js"></script>
+    <script src="./slider.js"></script>
+  </body>
+</html>

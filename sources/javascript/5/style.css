@@ -1,0 +1,38 @@
+
+@font-face {
+  font-family: "HGKUnica77VIPBeta";
+  src: url("fonts/HGKBUnica77VIPBeta.woff2") format("woff2");
+}
+
+.main-description {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+}
+
+
+html {
+  background-color: #f0f0f0;
+  font-family: "Helvetica", monospace;
+  font-size: 13px;
+}
+
+#text {
+  font-family: "HGKUnica77VIPBeta", monospace;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-variation-settings: 'wght' 228;
+  padding: 0 50px;
+  outline: none;
+  border: none;
+  font-size: 50vw;
+}
+
+.col-full-height {
+  height: calc(100vh);
+}

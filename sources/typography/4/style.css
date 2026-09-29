@@ -1,0 +1,85 @@
+/** import fonts **/
+@font-face {
+  font-family: 'HGKUnica77VIPBeta';
+  src: url('fonts/HGKBUnica77VIPBeta.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** flex-container **/
+.flex-container {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex-item-full {
+  width: 100%;
+}
+
+.flex-item-one-third {
+  width: calc(33.33% - 20px);
+}
+
+.flex-item-one-half {
+  width: calc(50% - 10px);
+}
+
+
+h1, h2, h3, h4, h5, h6, p, em, strong {
+  color: var(--color-primary);
+  padding: 0;
+  margin: 0;
+  font-weight: normal
+}
+
+.font-regular {
+  font-family: 'HGKUnica77VIPBeta';
+  font-variation-settings: 'wght' 92;
+}
+
+.font-bold {
+  font-family: 'HGKUnica77VIPBeta';
+  font-variation-settings: 'wght' 850;
+}
+
+.font-italic {
+  font-family: 'HGKUnica77VIPBeta';
+  font-variation-settings: 'slnt' 24;
+
+}
+
+.font-extra-small {
+  font-size: 11px;
+  line-height: 120%;
+}
+
+.font-medium {
+  font-size: 21px;
+  line-height: 120%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 100%;
+  padding: 20px 0px;
+  font-weight: normal
+}
+
+@media (max-width: 768px) {
+  .flex-item-one-third {
+    width: 100%;
+  }
+  
+  .flex-item-one-half {
+    width: 100%;
+  }
+}

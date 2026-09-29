@@ -1,0 +1,28 @@
+/** import fonts **/
+@font-face {
+  font-family: 'HGKUnica77VIPBeta';
+  src: url('fonts/HGKBUnica77VIPBeta.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'HGKUnica77VIPBeta', sans-serif;
+  font-variation-settings: 'wght' 150;
+}
+
+.row {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  color:  var(--color-primary);;
+  padding:10px;
+  margin-bottom: 5px;
+}
+
+.col {
+  border: 1px solid var(--color-primary);
+  padding: 10px;
+}
+

@@ -1,0 +1,35 @@
+html,
+body {
+  font-family: "Helvetica", sans-serif;
+ 
+  color: var(--color-primary);
+}
+
+.main-description {
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.container1  {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--color-primary);
+  transform: rotate(120deg) scale(0.1); 
+}
+
+.container2  {
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--color-primary);
+  /* transform: translate(100px, 0px) scale(0.5) skewX(30deg);  */
+  transform: translateX(500px) scale(1.1) skewX(10deg);
+}
+
+
