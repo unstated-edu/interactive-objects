@@ -59,10 +59,8 @@ function loop() {
 		const angle = angle2DFromCorners(detection);
 
 		const specimen = document.getElementById("specimen");
-		let newWeight = 100 + (angle / 180) * 100;
 		let newLetterSpacing = 0 + (angle / 180) * 10;
 
-		specimen.style.fontVariationSettings = `'wght' ${newWeight}`;
 		specimen.style.letterSpacing = `${newLetterSpacing}px`;
 	}
   if (ids.includes(1)) {

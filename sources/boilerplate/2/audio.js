@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let textAudio = document.getElementById("text-audio");
 let weightAudio = null;
+
+//
 function update() {
   requestAnimationFrame(update);
   console.log(sound);
