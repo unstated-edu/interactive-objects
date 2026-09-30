@@ -27,7 +27,12 @@ h1, h2, h3, h4, h5, h6, p, em, strong {
 
 .font-bold {
   font-family: 'HGKBrownLLVIP-Collection';
-  font-variation-settings: 'wght' 850, 'slnt' -10, 'wdth' 75;
+  font-variation-settings: 'wght' 900, 'slnt' 10, 'wdth' 100;
+  color: red;
+}
+
+.maxi-line-height {
+  line-height: 200px;
 }
 
 .font-italic {

@@ -29,6 +29,18 @@
 
 
 /** responsive **/
+@media (max-width: 968px) {
+  .flex-item {
+    width: 100%; 
+    background-color: orange;
+  }
+  .flex-item-2 {
+    color: black;
+  }
+}
+
+
+/** responsive **/
 @media (max-width: 768px) {
   .flex-item {
     width: 100%; 
@@ -37,4 +49,4 @@
   .flex-item-2 {
     color: black;
   }
-}
+

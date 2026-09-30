@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
 
 .flex-self-align-center {
   align-self: center;

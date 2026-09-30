@@ -8,7 +8,6 @@ let chars = document.querySelectorAll(".char");
 chars.forEach((char) => {
   char.addEventListener("mouseenter", () => {
     //take the content od the div and put it in the preview
-    
     previewCharSpan.innerHTML = char.innerHTML;
     //take info from the data-info attribute and put it in the preview
     previewInfo.innerHTML = char.getAttribute("data-info");

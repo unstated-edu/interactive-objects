@@ -9,6 +9,7 @@ const fontWeightRangeInputValue = document.getElementById('fontWeightValue');
 
 function updateFontWeight() {
 	weight = fontWeightRangeInput.value;
+	console.log(weight);
 	textArea.style.fontVariationSettings = `'wght' ${weight}, 'slnt' ${slant}, 'wdth' ${width}`;
 	fontWeightRangeInputValue.textContent = weight;
 }
@@ -41,3 +42,4 @@ function updateWidthWeight() {
 }
 fontWidthRangeInput.addEventListener('input', updateWidthWeight);
 updateWidthWeight(); // Fixed to call the correct function for initialization
+
