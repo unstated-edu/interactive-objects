@@ -19,7 +19,7 @@ body {
   width: 200px;
   height: 200px;
   background-color: var(--color-primary);
-  transform: rotate(120deg) scale(0.1); 
+  transform: rotate(120deg) scale(0.3); 
 }
 
 .container2  {

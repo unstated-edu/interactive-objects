@@ -69,7 +69,7 @@ function loop() {
   if (ids.includes(1)) {
 	
 	  	const detection = detections.find((det) => det.id === 1);
-	  	const x = detection.center.x;
+	  	const x = detection.center.y;
     	
 		//apply font weight
 		let newWeight = rangeMap(x, 400, 800, 80, 200);
