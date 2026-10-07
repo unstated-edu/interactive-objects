@@ -59,15 +59,22 @@ function loop() {
 		const angle = angle2DFromCorners(detection);
 
 		const specimen = document.getElementById("specimen");
+		
+		//letter spacing
 		let newLetterSpacing = 0 + (angle / 180) * 10;
 
+		//apply letter spacing
 		specimen.style.letterSpacing = `${newLetterSpacing}px`;
 	}
   if (ids.includes(1)) {
+	
 	  	const detection = detections.find((det) => det.id === 1);
 	  	const x = detection.center.x;
-    	//console.log(x);
+    	
+		//apply font weight
 		let newWeight = rangeMap(x, 400, 800, 80, 200);
+		
+		//apply font weight
 		specimen.style.fontVariationSettings = `'wght' ${newWeight}`;
   }
 }

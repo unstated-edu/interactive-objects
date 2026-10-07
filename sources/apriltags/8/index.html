@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IO Hand — Unica weight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="stage">
+      <video id="video" autoplay playsinline width="640" height="480"></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+      <p id="status" class="hint">Loading hand model…</p>
+    </div>
+
+    <aside class="specimen-panel">
+      <p class="specimen-panel__label">font-variation-settings: <span id="wght-readout">'wght' 32</span></p>
+      <div id="specimen" class="specimen" contenteditable="true" spellcheck="false">Hello!</div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1675466124/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
